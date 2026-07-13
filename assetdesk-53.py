@@ -1,0 +1,25 @@
+# === Stage 53: Add command help text and usage examples ===
+# Project: AssetDesk
+def print_help():
+    """Print AssetDesk CLI usage and example commands."""
+    print("AssetDesk - Asset Checkout Workspace")
+    print("=" * 40)
+    print()
+    print("Usage:")
+    print("  python assetdesk.py <command> [options]")
+    print()
+    print("Commands:")
+    print("  add_item              Add a new item to the inventory")
+    print("  checkout_item         Check out an item to a custodian")
+    print("  return_item           Return an item and update condition")
+    print("  list_items            List all items with status summary")
+    print("  get_overdue           Show items past their due date")
+    print("  audit_report          Generate a full audit report for the period")
+    print()
+    print("Examples:")
+    print("  python assetdesk.py add_item --name 'Laptop' --custodian 'Alice' --due_date '2025-12-31'")
+    print("  python assetdesk.py checkout_item --item_id 1042 --custodian 'Bob'")
+    print("  python assetdesk.py return_item --item_id 1042 --condition 'Good' --notes 'Minor scratch on lid'")
+    print("  python assetdesk.py list_items")
+    print("  python assetdesk.py get_overdue")
+    print("  python assetdesk.py audit_report --start_date '2025-06-01' --end_date '2025-07-31'")
